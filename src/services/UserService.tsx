@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const REST_API_BASE_URL = 'https://proactive-elegance-production.up.railway.appp/api/readersinfo';
+const REST_API_BASE_URL = 'https://proactive-elegance-production.up.railway.app/api/readersinfo';
 
 
 
