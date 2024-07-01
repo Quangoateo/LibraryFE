@@ -1,0 +1,218 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    
+    .login-container-wrapper {
+      display: flex;
+      overflow: hidden;
+      background-color: #fff;
+      height: 100vh;
+      position: relative;
+      width: 100vw;
+      
+    }
+    
+    .login-img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: relative;
+      top: 0;
+      left: 0;
+      /* z-index: -1; */
+    }
+    
+    .login-form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Adjust width as needed */
+    /* Add a max-height or height if needed, possibly in a media query for smaller heights */
+  }
+  
+  .login-form-container div{
+    align-items: center;
+    position: relative;
+    top: 10%
+  }
+  
+  .login-form-logo{
+    height: 50px;
+  }
+  
+  .login-form-title{
+    margin: 0px 0;
+    text-align: center;
+    font-size: var(--h1-font-size);
+  }
+  
+  .login-form-subtitle{
+    text-align: center;
+    font-size: var(--normal-font-size);
+  }
+  
+  .login-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 30%;
+    max-height: calc(100% - 100px); /* Adjust as needed to leave space for title and subtitle */
+  }
+  
+  .login-form-label {
+    font-weight: bold;
+  }
+  
+  .login-form-input {
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    font-size: var(--normalize-font-size);
+  }
+
+  .buttonArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 100%; */
+  }
+  
+  .login-form-button {
+    background-color: rgb(237, 146, 27);
+    width: 120px;
+    padding: 12px;
+    color: #f6f6f6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--h3-font-size);
+  }
+  
+  .login-form-button:hover {
+    background-color: #f3d08e;
+    color : #291a07;
+  }
+  
+  .register-form-button {
+    background-color: rgb(237, 146, 27);
+    padding: 12px;
+    color: #f4f2f0;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--h3-font-size);
+  }
+  
+  .register-form-button:hover {
+    background-color: #f3d08e;
+    color : #291a07;
+  }
+  
+  .login-remember-forgot-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal-font-size);
+  }
+  
+  .login-remember-checkbox{
+    margin-right: var(--mb-0-25);
+  }
+  
+  .login-forgot-password a{
+    color: var(--title-color);
+  }
+  
+  @media (min-width: 1113px) {
+    .l-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    
+    .l-8 {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+    }
+  }
+  
+  /* Medium screens (width >= 740px) and (width < 1113px) */
+  @media (min-width: 140px) and (max-width: 1113px) {
+    /* /* .m-0 {
+      flex: 0 0 0;
+      max-width: 100%;
+    }
+    */
+    .login-form-container {
+     display: block;
+    }
+    
+    .m-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    } */
+    
+    .login-form-title,
+    .login-form-subtitle {
+      display: flex;
+      flex-direction: column;
+      text-align: center; /* Ensures text is centered */
+      width: 100%; /* Ensures elements take full width, helping with text alignment */
+      font-size: calc(var(--h1-font-size) + 2px); /* Adjusted font size for titles */
+      margin-bottom: 0px; /* Add space below the title and subtitle */
+    }
+    
+    .login-form-input,
+    .login-form-button,
+    .register-form-button {
+      /* margin-top: 16px; */
+      padding: 10px; /* Slightly larger padding for easier interaction */
+      font-size: calc(var(--normalize-font-size) + 2px); /* Adjusted font size */
+      width: 100%; /* Ensures full width within the container */
+      box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+    }
+    
+    .login-form-content {
+      display: block;
+      text-align: center;
+      gap: 20px;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 500px;
+      align-items: center;
+      overflow:hidden;
+      /* padding-top:150px; */
+    }
+
+    .login-remember-forgot-container{
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--normal-font-size);
+    }
+
+  }
+  
+  
+  /* .sidenav-container {
+    display:none;
+  } */
+}

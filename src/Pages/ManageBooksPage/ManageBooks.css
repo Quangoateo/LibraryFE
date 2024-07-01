@@ -1,0 +1,153 @@
+/* Add a specific class to the "Genre" column */
+.bookmanagmentpage .genre-column {
+  max-width: 300px; /* Adjust the width as needed */
+}
+
+.bookmanagmentpage .image-column {
+  max-width: 150px; /* Adjust the width as needed */
+}
+
+.bookmanagmentpage .bookmanagementTitle h1 {
+  text-align: center;
+}
+
+.bookmanagmentpage {
+    /* display: flex; */
+    /* flex-direction: column;  */
+    align-items: center;
+    margin: 20px;
+    overflow: auto;
+    scrollbar-width: thin;
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      width: 100%; /* Adjusted to 80% */
+    }
+
+    .search-bar Input {
+      width: 580px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: auto;
+    }
+    
+    th, td {
+      border: 1px solid #333230;
+      padding: 8px;
+    }
+    
+    th {
+      text-align: left;
+      /* background-color: #f2f2f2; */
+      background-color: #dcbc7c;
+      color: #333230;
+    }
+    
+    tr:hover {
+      background-color: #fad49f;
+    }
+    
+    .selected {
+      background-color: #ebebeb;
+    }
+    
+    .action-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .action-buttons button {
+      margin: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color : #c57907;
+      background-color: #e6d4b2;
+    }
+  
+    .action-buttons button :hover {
+      background-color: #130e05;
+      color: #f1c98c;
+    }
+    
+    .action-buttons button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  
+    .bookmanagmentpage .selected {
+      background-color: #f0f0f0;
+    } 
+    
+    .bookmanagmentpage form input {
+      margin: 5px 0;
+      padding: 10px;
+    }
+  
+    form input[type="text"] {
+      border: 3px solid #ccc;
+      border-radius: 10px;
+      width: 100%;
+    }
+    
+    form button {
+      margin: 5px 5px 5px 0;
+    }
+  
+    form label {
+      font-weight: bold;
+      text-align: center;
+    }
+  
+  
+  /* Additional styles for form items */
+  .ant-form-item {
+    /* display: flex; */
+    margin-bottom: 1px; /* Adjust based on your spacing needs */
+  }
+  
+  .ant-form-item-label {
+    padding-right: 18px; /* Adds some space between the label and the input */
+  }
+  
+  .ant-form-item-control {
+    flex-grow: 1; /* Ensures that the input field takes up the remaining space */
+  }
+  
+  /* Adjustments to input height to match the height of labels if necessary */
+  .ant-input,
+  .ant-checkbox-wrapper {
+    height: 30px; /* Adjust this value based on your actual label height */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ensuring the checkbox aligns properly with the label */
+  .ant-checkbox-wrapper {
+    margin-bottom: 0;
+  }
+  
+  /* Additional styling to adjust the height of select inputs, date pickers, etc., if used */
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-picker {
+    height: 32px; /* Match this height with your inputs and labels */
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+
+
+
+
+
+  
