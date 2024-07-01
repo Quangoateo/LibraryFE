@@ -1,0 +1,61 @@
+.loginPage {
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f0ff; /* Light blue background */
+    background-image: url('../../assets/banner2.png'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Centers the background image */
+
+
+    .login-form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #b4b2b2;
+    }
+
+    .login-form-subtitle {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .login-form-contain {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .buttonArea {
+        display: flex;
+        justify-content: center;
+        padding: 10px 30px;
+        /* justify-content: space-between  */
+    }
+
+    .buttonArea button {
+        /* width: 100%; */
+        padding: 10px;
+        border: none;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #829E8E;
+        color: #fff;
+        font-size: 0.865rem;
+        cursor: pointer;
+    }
+
+    .buttonArea button:hover {
+        background-color: #6c757d;
+    }
+
+}

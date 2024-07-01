@@ -1,0 +1,49 @@
+.footer {
+    background-color: #829E8E;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-info {
+    font-family: open-sans;
+}
+
+.footer-info h3 {
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
+}
+
+.footer-quote {
+    font-size: 24px;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-icons a {
+    color: inherit; /* Inherit color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-icons a:hover {
+    color: #4267B2; /* Optional: Add a custom hover color */
+}
+
+
+.footer-icons span {
+    color: #fff;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.is-divider {
+    padding: 25px 0;
+}
+
+
+@media screen and (max-width:766px) {
+    .footer-icons {
+        padding-bottom: 2.5rem;
+    }
+}

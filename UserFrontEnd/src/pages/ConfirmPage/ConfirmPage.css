@@ -1,0 +1,74 @@
+.banner-confirm {
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(../../assets/banner2.png);
+    background-size: cover;
+    background-position: 69%;
+}
+
+.banner-text-confirm {
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text-confirm h2 {
+    text-transform: capitalize;
+    font-size: 48px;
+}
+
+.banner-text-confirm p {
+    padding: 0 5px;
+}
+
+.custom-btn-confirm {
+    background-color: #829E8E;
+    color: #fff;
+}
+
+
+@media screen and (max-width:1199px) {
+
+    .banner-confirm {
+        min-height: 40vh;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .banner-text-confirm h2 {
+        font-size: 36px;
+    }
+
+    .banner-text-confirm p {
+        font-size: 14px;
+    }
+
+    .banner-confirm {
+        min-height: 50vh;
+    }
+
+}
+
+
+@media screen and (max-width:766px) {
+    .banner-text-confirm h2 {
+        font-size: 24px;
+    }
+
+    .banner-text-confirm p {
+        font-size: 12px;
+    }
+
+    .table-header-confirm {
+        font-size: 12px;
+    }
+
+    .table tbody td {
+        font-size: 12px;
+    }
+
+    .custom-btn-confirm {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,34 @@
+.regulation-page {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; - remove this */
+  /* justify-content: left; - remove this */
+  text-align: left; /* Add this to ensure all text is left-aligned */
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+.regulation-page h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  text-align: left; /* Ensure the heading is left-aligned */
+}
+
+.regulation-page p {
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: left; /* Ensure paragraphs are left-aligned */
+}
+
+.regulation-page .content {
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: left; /* Ensure the content div is left-aligned */
+}
+
+.regulation-page .content {
+  margin: 0px 100px;
+
+  max-width: fit-content;
+}

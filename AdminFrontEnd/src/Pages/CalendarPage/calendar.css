@@ -1,0 +1,55 @@
+.calendarPage {
+  .calendar-container {
+      padding: 20px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    
+    .calendar-heading {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .events {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .events li {
+      margin-bottom: 5px;
+    }
+    
+    .notes-month {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .notes-month span {
+      font-weight: bold;
+    }
+
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      border: solid 2px #140f05; /* Thicker outer border */
+    }
+
+    thead th {
+      background-color: #eaa742; /* Background color of table header */
+      color: #130e05; /* Text color of table header */
+      padding: 12px;
+      text-align: center;
+      border: solid 5px #eaa742; /* Border thickness and color */
+      border-top: solid 5px #eaa742; /* Ensure there's a top border */
+      border-bottom: solid 5px #eaa742; /* Ensure there's a bottom border */
+  }
+
+  thead th,
+  tbody td {
+      color: #130e05; /* Text color of table header */
+      padding: 12px;
+      text-align: center;
+      border: solid 1px #eaa742; /* Border around each cell */
+  }
+
+}

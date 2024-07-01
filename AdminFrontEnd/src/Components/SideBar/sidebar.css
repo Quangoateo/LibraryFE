@@ -1,0 +1,240 @@
+
+
+
+
+.sidenav-container {
+  position: relative; /* Add this line if missing */
+  display: flex;
+  color: #504125;
+  flex-direction: column;
+  background-color: #e9e9e9;
+}
+
+.ant-layout-sider-children{
+border-right: 1px solid #f6f6f6;
+}
+
+.sidenav-logo-name-container {
+  height: max-content;
+  background-color: #e9e9e9; /* Adjust the background color as needed */
+  border-right: 1px solid #f6f6f6;
+  padding: 16px;
+}
+
+.sidenav-logo {/* Adjust the width of your logo */
+  height: 60px; /* Adjust the height of your logo */
+  object-fit: contain;
+  margin: 0 0 8px 12px;
+}
+
+.sidenav-app-name {
+  font-size: var(--h2-font-size); 
+  font-weight: var(--font-semi-bold);
+  color: rgb(202, 95, 7);
+  text-align: center;
+  margin-bottom: var(--mb-1)
+}
+
+.sidenav-menu-bar{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--normal-font-size);
+  width: 300px;
+  background-color: #e9e9e9;
+}
+
+.sidenav-profile-section {
+  background-color: #e9e9e9; 
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  /* height: 100px; */
+  border-top: 1px solid #000000;
+}
+
+.sidenav-profile-section-wrapper {
+  display: flex;
+  align-items: left;
+  background-color: #e9e9e9;
+}
+
+.sidenav-profile-section-wrapper i{
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+}
+
+.sidenav-profile-user-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  font-size: var(--normal-font-size);
+  margin-right: var(--mb-0-5);
+}
+
+.sidenav-user-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav-user-name {
+  margin-right: 0px;
+  font-weight: var(--font-semi-bold);
+  line-height: 24px;
+  color: var(--title-color);
+  display: flex;
+  align-self: center;
+}
+
+.sidenav-user-role{
+  color: #A800E3;
+  border-radius: 5px;
+  border: 2px solid #A800E3;
+  padding: 2px 8px;
+  width: max-content;
+  line-height: 24px;
+  font-weight: var(--font-semi-bold);
+}
+
+.sidenav-user-email {
+  margin-top: 8px;
+  line-height: 24px;
+}
+
+/* Sidebar.css - Add these styles to your existing sidebar styles */
+
+/* Avatar styles */
+.sidenav-avatar {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sidenav-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Modal upload button/icon styling */
+.avatar-uploader .ant-upload {
+  width: 128px;
+  height: 128px;
+  border: none;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: auto;
+  height: auto;
+}
+
+/* Styling for the cloud upload icon and text inside the upload area */
+.bx.bxs-cloud-upload {
+  font-size: 24px;
+  color: #999;
+}
+
+.ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+
+/* Adjustments for the profile section for a cleaner look */
+.sidenav-profile-section {
+  background-color: #e9e9e9; 
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #675946;
+}
+
+.sidenav-profile-section-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-avatar {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  margin-right: 0px; /* Maintain some spacing between the avatar and user info */
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  border-radius: 50%; /* Makes the avatar circular */
+  object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+  margin-left: 0px;
+}
+.sidenav-avatar:hover {
+  transform: scale(1.2);
+}
+
+.sidenav-profile-user-info {
+  flex-grow: 1; /* Fill the remaining space */
+}
+
+.sidenav-user-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread the elements */
+}
+
+.sidenav-user-name {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.sidenav-user-role {
+  color: #A800E3;
+  border-radius: 5px;
+  border: 2px solid #A800E3;
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+.sidenav-user-email {
+  margin-top: 8px;
+  font-size: var(--smaller-font-size);
+}
+
+
+.sidenav-signout-btn {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.sidenav-signout-btn i {
+  font-size: 20px;
+  color: #777;
+}
+
+/* When the user hovers over the sign-out icon, change color */
+.sidenav-signout-btn:hover i {
+  color: #ff4d4f;
+}
+
+/* Additional styling for the upload modal to make it look better */
+.modal-avatar-upload .ant-modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensures the upload list does not display, focusing on the current avatar or upload button */
+.avatar-uploader .ant-upload-list {
+  display: none;
+}
+
+
+
+/* Responsive styles for the sidebar */
+@media (max-width: 998px) {
+  .sidenav-container {
+    display: flex; /* Hide the sidebar by default on smaller screens */
+  }
+
+  .sidenav-toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 0; /* Adjust the left position */
+    z-index: 1000;
+    cursor: pointer;
+  }
+}

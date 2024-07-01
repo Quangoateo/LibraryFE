@@ -1,0 +1,20 @@
+.manageRentalPage {
+    margin: 20px;
+    .rental-table {
+        width: 100%;
+        border-collapse: collapse;
+        padding: 30px;
+        margin-top:20px;
+    }
+    
+    .rental-table th,
+    .rental-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .rental-table th {
+        background-color: #f2f2f2;
+    }
+}

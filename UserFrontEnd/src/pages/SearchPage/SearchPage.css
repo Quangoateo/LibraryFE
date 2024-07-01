@@ -1,0 +1,219 @@
+.banner-search {
+    width: 100%;
+    min-height: 70vh;
+    background-image: url(../../assets/banner2.png);
+    background-size: cover;
+    background-position: 69%;
+}
+
+.banner-text-search {
+    padding-top: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-text-search h2 {
+    text-transform: capitalize;
+    font-size: 48px;
+}
+
+.banner-text-search p {
+    padding: 0 5px;
+}
+
+.filter-item-search {
+    padding-bottom: 15px;
+}
+
+.space-filer-search {
+    margin-left: 52px;
+}
+
+
+.control-label {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+
+.button-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.typography-root {
+    margin: 0;
+}
+
+.typography-root.item-text-search {
+    font-family: open-sans;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 11px;
+}
+
+.filter-divider-search {
+    margin-top: 8px;
+    padding-top: 12px;
+}
+
+
+.divider-search {
+    margin: 30px 0;
+}
+
+.book-card {
+    margin-bottom: 20px;
+}
+
+.card-title-search a {
+    color: black;
+}
+
+.card-text-search {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.card-text-search strong {
+    font-weight: bold;
+    color: black;
+    margin-right: 5px;
+}
+
+
+
+.card-text-search.author,
+.card-text-search.likes-count,
+.card-text-search.summary {
+    margin-top: 20px;
+}
+
+.main-content {
+    padding-bottom: 10px;
+}
+
+.card-btn Button {
+    margin: 10px;
+    background-color: rgb(95, 125, 91);
+}
+
+/* Custom hover effect for buttons inside .card-btn */
+.card-btn Button:hover {
+    color: #070000;
+    background-color: rgb(187, 224, 199);
+}
+
+.search-form-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-form-elem {
+    padding: 0.4rem 1.6rem;
+    border-radius: 3.8rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-form-elem .form-control::placeholder {
+    opacity: 0.9;
+}
+
+.search-form-elem input.form-control {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-suggestions {
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-suggestions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-suggestions li {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-suggestions li:hover {
+    background-color: #f4f4f4;
+  }
+
+
+.filter-item-search {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.filter-item-search h5 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+
+.filter-genre, .filter-author, .filter-year, .filter-availability {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.filter-genre .form-check, .filter-author .form-check, .filter-year .form-check, .filter-availability .form-check {
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:1199px) {
+    .banner-search {
+        min-height: 40vh;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card-text-search.author,
+    .card-text-search.likes-count,
+    .card-text-search.summary {
+        margin-top: 10px;
+    }
+
+    .banner-search {
+        min-height: 50vh;
+    }
+
+    .card-btn {
+        display: flex;
+    }
+
+    .card-btn Button {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .banner-text-search h2 {
+        font-size: 24px;
+    }
+
+    .banner-text-search p {
+        font-size: 12px;
+    }
+}
